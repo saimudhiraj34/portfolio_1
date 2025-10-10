@@ -1,0 +1,85 @@
+.contact-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-inside {
+  border: 4px solid #06eff0;
+  height: 80%;
+  width: 82%;
+  margin-top: 5vh;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.contact-inside h2 {
+  font-size: 2rem;
+  color: #06eff0;
+  margin-bottom: 10px;
+}
+
+.contact-desc {
+  text-align: center;
+  font-size: 1rem;
+  color: #ccc;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  background-color: #1a1a1a;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border: 2px solid #06eff0;
+}
+
+#but {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.submitbut {
+  background-color: #06eff0;
+  color: black;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submitbut:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.05);
+}
