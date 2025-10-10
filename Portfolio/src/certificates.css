@@ -46,8 +46,8 @@
     background-color: rgb(33, 33, 33);  
 }
 .certificate-img{
-  width: 250px;
-  height:310px;
+  width: 240px;
+  height:300px;
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.3s ease;

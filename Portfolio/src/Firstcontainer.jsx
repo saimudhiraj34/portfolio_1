@@ -56,10 +56,8 @@ export const Firstcontainer = () => {
               <a href="#home"><li>Home</li></a>
               <a href="#skills"><li>Skills</li></a>
               <a href="#projects"><li>Project</li></a>
-              <li>Platforms</li>
-              <li>Achievements</li>
-              <li>Certificates</li>
-              <li>Contact</li>
+              <a href="#certificate"><li>Certificates</li></a>
+              <a href="#contact"><li>Contact</li></a>
             </ul>
           </div>
           <div className="slide-container">

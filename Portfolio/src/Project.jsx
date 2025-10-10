@@ -81,6 +81,7 @@ return (
                     onMouseEnter={handleMouseEnter}     
                      onMouseLeave={handleMouseLeave}         
                   muted
+                  width="590px"
                 ></video>
 
                 {/* Custom controls */}

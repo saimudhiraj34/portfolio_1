@@ -24,7 +24,7 @@ export const Certificates = () => {
   };
 
   return (
-    <div className="certificates-container">
+    <div className="certificates-container" id="certificate">
       <div className="certificates-inside">
         <h2>Certificates</h2>
         <div className="certificates-boxes">
