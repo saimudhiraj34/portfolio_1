@@ -86,7 +86,7 @@ export const Firstcontainer = () => {
               <div className="imgdiv">
                 <a href="https://leetcode.com/u/saimudhiraj64">
                   <img
-                    src="/public/leetcode.png"
+                    src="/leetcode.png"
                     width="30px"
                     height="30px"
                     className="img"
@@ -95,7 +95,7 @@ export const Firstcontainer = () => {
                 <h3>300+</h3>
                 <a href="https://www.geeksforgeeks.org/user/sai_mudhiraj_034">
                   <img
-                    src="/public/gfg.png"
+                    src="/gfg.png"
                     width="30px"
                     height="26px"
                     className="img"
@@ -136,7 +136,7 @@ export const Firstcontainer = () => {
               </div>
             </div>
             <div className="slide-1_pic">
-            <img  className="sai_pic"src="/public/sai_pic.png" alt="Sai Kumar" />
+            <img  className="sai_pic"src="/sai_pic.png" alt="Sai Kumar" />
             </div>
           </div>
         </div>
@@ -148,7 +148,7 @@ export const Firstcontainer = () => {
         <div className="slide-2">
           <div className="about-container">
             <div className="slide-2_pic">
-               <img  className="sai_pic2"src="/public/sai_pic.png" alt="Sai Kumar" />
+               <img  className="sai_pic2"src="/sai_pic.png" alt="Sai Kumar" />
             </div>
             <div className="about-details">
               <h2>Introducing Me</h2>

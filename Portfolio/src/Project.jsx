@@ -7,7 +7,7 @@ export const Project = () => {
   const videos=[
     {
         id:1,
-        src:"/abcd.mp4",
+        src:"/amazon.mp4",
         title:"Amazon_HeroPage",
         desc:"This project is an Amazon clone I created as a beginner to learn HTML and CSS from scratch.I built it completely without using any AI tools.It helped me understand web page design and front-end development fundamentals",
         features:'"Security, Dashboard, Streak Graph, Process of Project, Important Notes,Remainders,Schedule,WorkDoneToday"',
