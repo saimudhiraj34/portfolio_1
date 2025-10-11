@@ -12,7 +12,9 @@ export const Firstcontainer = () => {
     "React",
     "Node.js",
     "MongoDB",
-    "Express.js",
+    "Express",
+    "Sql",
+    "problem_solving"
   ];
   const [currentSkillIndex, setCurrentSkillIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
@@ -133,7 +135,9 @@ export const Firstcontainer = () => {
                 </div>
               </div>
             </div>
-            <div className="slide-1_pic"></div>
+            <div className="slide-1_pic">
+            <img  className="sai_pic"src="/public/sai_pic.png" alt="Sai Kumar" />
+            </div>
           </div>
         </div>
       ),
@@ -143,7 +147,9 @@ export const Firstcontainer = () => {
       content: (
         <div className="slide-2">
           <div className="about-container">
-            <div className="slide-2_pic"></div>
+            <div className="slide-2_pic">
+               <img  className="sai_pic2"src="/public/sai_pic.png" alt="Sai Kumar" />
+            </div>
             <div className="about-details">
               <h2>Introducing Me</h2>
               <p>
@@ -221,21 +227,20 @@ export const Firstcontainer = () => {
   ];
 
   //   useEffect(() => {
-  //   if (!isUserInteracting) {
+
   //     intervalRef.current = setInterval(() => {
   //       setCurrentIndex((prev) => (prev + 1) % slides.length);
-  //     }, 4000);
-  //   }
+  //     },10000);
   //   return () => clearInterval(intervalRef.current);
   // }, [isUserInteracting, slides.length]);
 
 
-  const handleUserClick = (index) => {
-    setIsUserInteracting(true);
-    setCurrentIndex(index);
-    clearInterval(intervalRef.current);
-    setTimeout(() => setIsUserInteracting(false),8000);
-  };
+  // const handleUserClick = (index) => {
+  //   setIsUserInteracting(true);
+  //   setCurrentIndex(index);
+  //   clearInterval(intervalRef.current);
+  //   setTimeout(() => setIsUserInteracting(false),10000);
+  // };
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToSlide = (index) => {setCurrentIndex(index)};
 
@@ -247,8 +252,8 @@ export const Firstcontainer = () => {
         className="slides-wrapper"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
-        {slides.map((slide,index) => (
-          <div key={slide.id} className="slide"  onClick={() => handleUserClick(index)}>
+        {slides.map((slide) => (
+          <div key={slide.id} className="slide" >
             {slide.content}
           </div>
         ))}

@@ -8,30 +8,34 @@ export const Project = () => {
     {
         id:1,
         src:"/abcd.mp4",
-        title:"DeveloperDashBoard",
-        desc:"This project mainly focuses on students. They can store their preparation data in one place and view a dashboard of their data.",
+        title:"Amazon_HeroPage",
+        desc:"This project is an Amazon clone I created as a beginner to learn HTML and CSS from scratch.I built it completely without using any AI tools.It helped me understand web page design and front-end development fundamentals",
         features:'"Security, Dashboard, Streak Graph, Process of Project, Important Notes,Remainders,Schedule,WorkDoneToday"',
-        tech:"MERN",
-        live:"https://developer-dashboard-1.netlify.app/"
+        tech:"HTML,CSS",
+        code:"https://github.com/saimudhiraj34/AmazonClone",
+        live:""
+  
     },
     {
         id:2,
-        src:"/abcd.mp4",
-        title:"DeveloperDashBoard",
-        desc:"This project mainly focuses on students. They can store their preparation data in one place and view a dashboard of their data.",
-        features:'"Security, Dashboard, Streak Graph, Process of Project, Important Notes,Remainders,Schedule,WorkDoneToday"',
+        src:"/Dailystreak.mp4",
+        title:"Dailystreaks",
+        desc:"full-stack project showcases my understanding of frontend and backend seamlessly communicate through APIs I also implemented authentication to ensure secure user access and data handling ",
+        features:'"Security, Api Requests, Fetching, All_users"',
         tech:"MERN",
-        live:""
+        code:"https://github.com/saimudhiraj34/DailyStreakFrontend",
+        live:"https://dailystreaksss.onrender.com",
     },
     {
         id:3,
-        src:"/abcd.mp4",
-        title:"DeveloperDashBoard",
-        desc:"This project mainly focuses on students. They can store their preparation data in one place and view a dashboard of their data.",
-        features:'"Security, Dashboard, Streak Graph, Process of Project, Important Notes,Remainders,Schedule,WorkDoneToday"',
+        src:"/password.mp4",
+        title:"Password_Manager",
+        desc:"This password manager is a full-stack project I built as a beginner to learn how the frontend and backend communicate through APIs.I focused on understanding how to fetch and store data securely in the backend",
+        features:'"Security, Api Requests, Fetching, All_users"',
         tech:"MERN",
+        code:"https://github.com/saimudhiraj34/password_manager", 
         live:""
-    },
+    }
   ]
 
 return (
@@ -81,7 +85,7 @@ return (
                     onMouseEnter={handleMouseEnter}     
                      onMouseLeave={handleMouseLeave}         
                   muted
-                  width="590px"
+        
                 ></video>
 
                 {/* Custom controls */}
@@ -90,9 +94,9 @@ return (
                     {muted ? "Unmute" : "Mute"}
                   </button>
                   <button onClick={handleFullScreen}>Fullscreen</button>
-                  <button className="dynamic-btn">Code</button>
+                  <a href={video.code}><button className="dynamic-btn">Code</button></a>
                   {video.live==="" ? "" :(
-                  <button className="dynamic-btn">Live</button>
+                  <a href={video.live}><button className="dynamic-btn">Live</button></a>
                   )
                   }
                 </div>

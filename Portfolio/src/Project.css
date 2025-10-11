@@ -40,8 +40,9 @@ a{
     gap:45px;
 }
 .project-box{
-    width:45%;
+    width:40%;
     height:65vh;
+    padding:15px;
     display: flex;
     justify-content: center;
     background-color:whitesmoke;
@@ -52,7 +53,7 @@ a{
 .video{
     margin-top: 10px;
     background-color:transparent;
-    width:490px;
+    width:450px;
     height:229px;
 }
 .video:hover {
@@ -115,7 +116,7 @@ p s{
 }
 
 .videotext h3 {
-  color: #06eff0;
+  color: #3a0678;
   margin-bottom: 10px;
   font-size: 22px;
 }
@@ -173,9 +174,48 @@ width:95%;
     height:auto;
   }
   .videotext{
-    width:100%;
+    width:95%;
     height:auto;
     font-size:10px;
   }
+  .videotext h3{
+    font-size: 18px;
+  }
+}
+@media (min-width: 1920px) and (max-height: 1080px) {
+  .video{
+    width:550px;
+    height:340px;
+    margin-left: 20px;
+  }
+ .video-controls button{
+    margin-left: 20px;
+    font-size: larger;
+ }
+ .videotext h3{
+    font-size: 28px;
+    color: rgb(46, 4, 85);
+ }
+ .videotext p{
+    font-size: 20px;
+     text-align: left;
+     padding: 20px;
+ }
+ .p-f{
+    font-size: 20px;
+    padding: 20px;
+    overflow: hidden;
+    height:40px;
+ }
+ .project-box{
+    height:67vh;
+ }
+ @media (max-width: 1200px){
+  .project-boxes{
+    display:flex;
+    flex-direction:column;
+    flex-wrap: nowrap;
+  }
+ }
 }
 
