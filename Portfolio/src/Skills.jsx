@@ -89,7 +89,7 @@ export const Skills = () => {
             </div>
             <div className="box">
               <img
-                src="/public/postman.png"
+                src="/postman.png"
                 alt="Postman"
                 style={{ width: "40px", height: "40px" }}
               />
