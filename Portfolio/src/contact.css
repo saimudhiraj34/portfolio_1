@@ -1,13 +1,18 @@
 .contact-container {
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .contact-inside {
   border: 4px solid #06eff0;
-  height: 80%;
-  width: 82%;
-  margin-top: 5vh;
+  height: auto;
+  width: 100%;
+  max-width: 600px;
   border-radius: 10px;
   background-color: black;
   color: white;
@@ -15,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .contact-inside h2 {
@@ -78,4 +83,60 @@
   background-color: white;
   color: black;
   transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 15px;
+  }
+  
+  .contact-inside {
+    width: 100%;
+    padding: 20px;
+    max-width: 100%;
+  }
+  
+  .contact-inside h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contact-desc {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    max-width: 100%;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-container {
+    padding: 10px;
+  }
+  
+  .contact-inside {
+    padding: 15px;
+    border-width: 3px;
+  }
+  
+  .contact-inside h2 {
+    font-size: 1.3rem;
+  }
+  
+  .contact-desc {
+    font-size: 0.85rem;
+  }
+  
+  .submitbut {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
 }
