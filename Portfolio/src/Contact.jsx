@@ -3,7 +3,13 @@ import "./contact.css";
 
 export const Contact = () => {
   return (
-    <div className="contact-container" id="contact">
+    <div className="contact-container" 
+     style={{ 
+        display: 'flex', 
+        justifyContent: 'center', 
+        alignItems: 'center', 
+        minHeight: '100vh' 
+      }}id="contact">
       <div className="contact-inside">
         <h2>Contact Me</h2>
         <p className="contact-desc">

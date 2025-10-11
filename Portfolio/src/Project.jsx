@@ -10,7 +10,7 @@ export const Project = () => {
         src:"/amazon.mp4",
         title:"Amazon_HeroPage",
         desc:"This project is an Amazon clone I created as a beginner to learn HTML and CSS from scratch.I built it completely without using any AI tools.It helped me understand web page design and front-end development fundamentals",
-        features:'"Security, Dashboard, Streak Graph, Process of Project, Important Notes,Remainders,Schedule,WorkDoneToday"',
+        features:"Design of Website",
         tech:"HTML,CSS",
         code:"https://github.com/saimudhiraj34/AmazonClone",
         live:""
