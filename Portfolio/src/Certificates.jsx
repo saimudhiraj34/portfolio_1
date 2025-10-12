@@ -5,17 +5,17 @@ export const Certificates = () => {
 
   const [selectedImage, setSelectedImage] = useState(null);
   const Img=[
-    {id:1, src:"/eduskill.png",alt:"eduskill"
+    {id:1, src:"./eduskill.png",alt:"eduskill"
     },
-    {id:2, src:"/internship.jpeg",alt:"eduskill"
+    {id:2, src:"./internship.jpeg",alt:"eduskill"
     },
-    {id:3, src:"/infosys.png" ,alt:"eduskill"
+    {id:3, src:"./infosys.png" ,alt:"eduskill"
     },
-    {id:4, src:"/ibm.png" ,alt:"eduskill"},
-    {id:5, src:"/scalar.png" ,alt:"eduskill"},
-    {id:6, src:"/hackerrank.png" ,alt:"eduskill"},
-    {id:7, src:"/tejas.jpeg" ,alt:"eduskill"},
-    {id:8, src:"/Data.png" ,alt:"eduskill"}
+    {id:4, src:"./ibm.png" ,alt:"eduskill"},
+    {id:5, src:"./scalar.png" ,alt:"eduskill"},
+    {id:6, src:"./hackerrank.png" ,alt:"eduskill"},
+    {id:7, src:"./tejas.jpeg" ,alt:"eduskill"},
+    {id:8, src:"./Data.png" ,alt:"eduskill"}
   ]
 
   const handleImageClick = (src) => {

@@ -7,7 +7,7 @@ export const Project = () => {
   const videos=[
     {
         id:1,
-        src:"/amazon.mp4",
+        src:"./amazon.mp4",
         title:"Amazon_HeroPage",
         desc:"This project is an Amazon clone I created as a beginner to learn HTML and CSS from scratch.I built it completely without using any AI tools.It helped me understand web page design and front-end development fundamentals",
         features:"Design of Website",
@@ -18,7 +18,7 @@ export const Project = () => {
     },
     {
         id:2,
-        src:"/Dailystreak.mp4",
+        src:"./Dailystreak.mp4",
         title:"Dailystreaks",
         desc:"full-stack project showcases my understanding of frontend and backend seamlessly communicate through APIs I also implemented authentication to ensure secure user access and data handling ",
         features:'"Security, Api Requests, Fetching, All_users"',
@@ -28,7 +28,7 @@ export const Project = () => {
     },
     {
         id:3,
-        src:"/password.mp4",
+        src:"./password.mp4",
         title:"Password_Manager",
         desc:"This password manager is a full-stack project I built as a beginner to learn how the frontend and backend communicate through APIs.I focused on understanding how to fetch and store data securely in the backend",
         features:'"Security, Api Requests, Fetching, All_users"',

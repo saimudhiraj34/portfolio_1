@@ -155,7 +155,7 @@ export const Firstcontainer = () => {
         <div className="slide-2">
           <div className="about-container">
             <div className="slide-2_pic">
-              <img className="sai_pic2" src="/sai_pic.png" alt="Sai Kumar" />
+              <img className="sai_pic2" src="./sai_pic.png" alt="Sai Kumar" />
             </div>
             <div className="about-details">
               <h2>Introducing Me</h2>
