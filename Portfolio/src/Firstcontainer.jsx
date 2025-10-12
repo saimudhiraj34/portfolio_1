@@ -143,7 +143,7 @@ export const Firstcontainer = () => {
               </div>
             </div>
             <div className="slide-1_pic">
-              <img className="sai_pic" src="/sai_pic.png" alt="Sai Kumar" />
+              <img className="sai_pic" src="./sai_pic.png" alt="Sai Kumar" />
             </div>
           </div>
         </div>
