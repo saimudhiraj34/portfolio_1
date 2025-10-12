@@ -12,9 +12,7 @@ function App() {
      <Skills/>
      <Project/>
      <Certificates/>
-      <Contact/>
-   
-     
+      <Contact/>     
     </>
   )
 }
