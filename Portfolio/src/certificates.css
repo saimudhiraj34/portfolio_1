@@ -1,90 +1,136 @@
 .certificates-container {
-   width: 100%;
-    height: 100vh;
-    display: flex;
-    background-color:white;
-    align-items: center;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
- 
+  width: 100%;
+  min-height: 100vh;
+  background:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  padding:30px;
 }
+
 .certificates-inside {
-   border: 4px solid #06eff0;
-   height: 80%;
-   width: 82%;
-   margin: auto;
-   margin-top: 5vh;
-   border-radius: 10px;
-   background-color: black;
-   color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    overflow: scroll;
-   
+  max-width: 1300px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.2); 
+
+  /* subtle white glow */
 }
-.certificates-inside h2{
-    display: flex;
-    justify-content: center;
+
+
+.certificates-inside h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  text-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+  margin-bottom: 10px;
 }
-.certificates-boxes{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+
+.certificates-inside p {
+  color: black;
+  margin-bottom: 50px;
+  font-size: 1.1rem;
 }
-.certificates-box{
-    width:20%;
-    height:45vh;
-    border: 4px solid white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;  
-    background-color: rgb(33, 33, 33);  
+
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center;
 }
-.certificate-img{
-  width: 240px;
-  height:300px;
-  border-radius: 10px;
+
+.certificate-card {
+  background:black;
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  border-radius: 18px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+  padding: 40px 20px;
+  transition: all 0.3s ease;
   cursor: pointer;
-  transition: transform 0.3s ease;
-  box-shadow: 0 4px 10px rgba(9, 144, 181, 0.3);
+  position: relative;
+  text-align: center;
 }
-.certificate-img:hover {
-  transform: scale(1.05);
+
+.certificate-card:hover {
+  border-color: rgba(0, 255, 255, 0.8);
+  box-shadow: 0 0 35px rgba(0, 255, 255, 0.5);
+  transform: translateY(-8px);
 }
+
+.card-icon {
+  background: radial-gradient(circle, rgba(0, 255, 255, 0.2), transparent 70%);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 25px;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+  color: #fff;
+}
+
+.card-content .org {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0, 255, 255, 0.2);
+  padding-top: 8px;
+  font-size: 0.9rem;
+  color: #00ffff;
+}
+
+.card-footer .year {
+  color: #fff;
+}
+
+/* ===== Popup ===== */
 .popup-overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(5, 5, 10, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 999;
 }
-.popup-content {
-  position: relative;
-}
+
 .popup-content img {
   max-width: 90%;
   max-height: 90vh;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  border: 2px solid cyan;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
 }
+
+/* Responsive */
 @media (max-width: 768px) {
-  .certificates-box {
-    width: 45%;
-    height: auto;
+  .certificates-inside h2 {
+    font-size: 2.3rem;
   }
-  .certificate-img {
-    width: 100%;
-    height: auto;
+
+  .certificate-card {
+    padding: 30px 15px;
   }
 }
 
+@media (max-width: 480px) {
+  .certificates-inside h2 {
+    font-size: 1.8rem;
+  }
+}

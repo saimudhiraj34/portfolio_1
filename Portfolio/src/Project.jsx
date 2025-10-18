@@ -5,8 +5,22 @@ import { useRef, useState } from "react";
 
 export const Project = () => {
   const videos=[
+  
     {
-        id:1,
+  id: 1,
+  src: "./grocerystore.mp4",
+  title: "Grocery Store",
+  desc: "This project is a Grocery Store management system that helps shopkeepers handle their business digitally. It manages user tracking, stock updates, and high-sale analysis with authentication for secure access. The system enables accurate data handling without any paperwork, making store management easier and more efficient.",
+  features: "User Tracking, Stock Management, Sales Analytics, Authentication",
+  tech: "HTML, CSS, JavaScript, MongoDB, Express, React, Node.js",
+  code: "https://github.com/saimudhiraj34/",
+  live: "https://grocerystore-3.onrender.com"
+}
+
+  
+    ,
+    {
+        id:2,
         src:"./amazon.mp4",
         title:"Amazon_HeroPage",
         desc:"This project is an Amazon clone I created as a beginner to learn HTML and CSS from scratch.I built it completely without using any AI tools.It helped me understand web page design and front-end development fundamentals",
@@ -17,7 +31,7 @@ export const Project = () => {
   
     },
     {
-        id:2,
+        id:3,
         src:"./Dailystreak.mp4",
         title:"Dailystreaks",
         desc:"full-stack project showcases my understanding of frontend and backend seamlessly communicate through APIs I also implemented authentication to ensure secure user access and data handling ",
@@ -27,7 +41,7 @@ export const Project = () => {
         live:"https://dailystreaksss.onrender.com",
     },
     {
-        id:3,
+        id:4,
         src:"./password.mp4",
         title:"Password_Manager",
         desc:"This password manager is a full-stack project I built as a beginner to learn how the frontend and backend communicate through APIs.I focused on understanding how to fetch and store data securely in the backend",
@@ -35,7 +49,8 @@ export const Project = () => {
         tech:"MERN",
         code:"https://github.com/saimudhiraj34/password_manager", 
         live:""
-    }
+    },
+  
   ]
 
 return (
@@ -84,7 +99,7 @@ return (
                   src={video.src}
                     onMouseEnter={handleMouseEnter}     
                      onMouseLeave={handleMouseLeave}         
-                  muted
+                  mute
         
                 ></video>
 

@@ -122,7 +122,7 @@ export const Firstcontainer = () => {
               <div className="icondiv">
                 <div className="social-icons">
                   <a
-                    href="https://github.com/yourgithub"
+                    href="https://github.com/saimudhiraj34/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
