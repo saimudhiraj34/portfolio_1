@@ -14,7 +14,7 @@ export const Project = () => {
   features: "User Tracking, Stock Management, Sales Analytics, Authentication",
   tech: "HTML, CSS, JavaScript, MongoDB, Express, React, Node.js",
   code: "https://github.com/saimudhiraj34/",
-  live: "https://grocerystore-3.onrender.com"
+  live: "https://grocerystore-3.onrender.com/"
 }
 
   
