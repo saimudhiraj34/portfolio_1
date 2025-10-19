@@ -118,19 +118,31 @@
   box-shadow: 0 0 40px rgba(0, 255, 255, 0.5);
 }
 
-/* Responsive */
+//* Responsive Layout for Tablets */
 @media (max-width: 768px) {
-  .certificates-inside h2 {
-    font-size: 2.3rem;
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 20px;
   }
 
   .certificate-card {
     padding: 30px 15px;
   }
+
+  .certificates-inside h2 {
+    font-size: 2.3rem;
+  }
 }
 
+/* Responsive Layout for Small Mobiles */
 @media (max-width: 480px) {
+  .certificates-grid {
+    grid-template-columns: 1fr; /* 1 per row for very small screens */
+    gap: 15px;
+  }
+
   .certificates-inside h2 {
     font-size: 1.8rem;
   }
 }
+
