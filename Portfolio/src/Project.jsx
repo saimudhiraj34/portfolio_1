@@ -57,6 +57,7 @@ return (
     <div className="Project-container" id="projects">
       <div className="project-inside">
         <h2>Projects</h2>
+        <p>mobile:-Click on Empty space to see video </p>
         <div className="project-boxes">
           {videos.map((video) => {
             const videoRef = useRef(null);
